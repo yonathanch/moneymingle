@@ -1,0 +1,256 @@
+/* CSS for styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    margin-top: 30px;
+  }
+  
+  
+  .row {
+  
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    color: #2cb9b8; /* Warna teks */
+}
+
+
+.col-sm-4 {
+    flex: 0 0 30%; 
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.col-sm-4:hover {
+    transform: scale(1.05); 
+}
+
+.col-sm-4 h5 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #343a40; 
+}
+
+.col-sm-4 p {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #a02834; 
+}
+  
+  /* Styling modal */
+  .modal-body {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+.modal-content {
+    background: linear-gradient(to right, #42f5d1, #3bb1b0);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .modal-header {
+    background: linear-gradient(to right, #2cb9b8, #218c8b);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .modal-title {
+    font-weight: bold;
+  }
+  
+  .modal-footer {
+    background: linear-gradient(to right, #2cb9b8, #218c8b);
+    border: none;
+    border-radius: 0 0 10px 10px;
+  }
+  
+ 
+  .modal-footer .btn {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+
+#btn-add {
+    background: linear-gradient(to right, #1b9e9e, #167e7e);
+    border-color: #eaf0f0;
+    color: #fff; 
+    margin: 0 5px 0 0; 
+}
+
+  /* Responsive table */
+  /* Styling table */
+  .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse; /* Menambahkan properti untuk menggabungkan border sel */
+  }
+  
+  /* Styling table header */
+  .table thead {
+    background-color: #f8f9fa;
+    color: #fff;
+  }
+  
+ 
+  /* Styling table rows */
+  .table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+  }
+  
+  /* Styling table cells (th, td) */
+  .table th,
+  .table td {
+    border: 1px solid #dee2e6; /* Menambahkan border pada th dan td */
+    padding: 8px;
+    text-align: center;
+  }
+  .table th{
+    background-color: #167e7e;
+    color: rgb(254, 251, 251);
+  }
+  
+  /* Optional: Highlight even rows with a different background color */
+  .table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  .no-data {
+    text-align: center;
+    vertical-align: middle;
+    height: 100px; /* Sesuaikan dengan tinggi sel tabel Anda */
+    line-height: 100px;
+  }
+  
+  #pagination {
+    margin-top: 20px;
+  }
+  
+  .pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .page-item {
+    margin: 0 5px;
+  }
+  
+  .page-link {
+    padding: 10px;
+    text-decoration: none;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+  }
+  
+  .page-link:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Styling buttons */
+  .btn-primary {
+    background: linear-gradient(to right, #1b9e9e, #167e7e);
+    border-color: #eaf0f0;
+    color: #fff; 
+    margin-bottom: 3rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #00b3a4;
+    border-color: #00b3a4;
+  }
+  
+
+.btn-danger {
+    background: linear-gradient(to right, #ff4e50, #fc575e);
+    border-color: #ff4e50;
+    color: #fff; /* Warna teks */
+    box-shadow: 0 4px 6px rgba(255, 78, 80, 0.1);
+    transition: all 0.3s ease; /
+}
+
+.btn-danger:hover {
+    background: linear-gradient(to right, #960c08, #c81912);
+    border-color: #960c08;
+    color: #fff; 
+    box-shadow: 0 6px 8px rgba(200, 25, 18, 0.2); 
+}
+ 
+  /* Navbar Styling */
+  .navbar,
+  .footer {
+    background-color: #42f5d1; /* Hijau Tosca */
+    color: white; /* Teks putih */
+  }
+  
+  /* Teks Navbar di sudut kanan dan kiri */
+  .navbar-brand {
+    margin-right: auto;
+    margin-left: 15px;
+  }
+  
+  /* Teks Navbar-nav di sebelah kanan */
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  .footer {
+    text-align: center;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    /* Adjust styles for tablets and smaller screens */
+    h2 {
+      font-size: 1.5em;
+    }
+  
+    .table {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Adjust styles for small screens (e.g., phones) */
+    h2 {
+      font-size: 1.2em;
+    }
+  
+    .table {
+      font-size: 0.8em;
+    }
+  }
+  
+p#total-pengeluaran,
+p#total-pemasukan,
+p#saldo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+
+
