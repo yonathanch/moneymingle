@@ -26,7 +26,7 @@ body {
 .col-sm-4 {
     flex: 0 0 30%; 
     padding: 15px;
-    background-color: #fff;
+    background-color: #2cb9b8;
     border: 1px solid #dee2e6;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -41,14 +41,14 @@ body {
 .col-sm-4 h5 {
     margin-bottom: 15px;
     font-size: 1.5em;
-    color: #343a40; 
+    color: #000000; 
 }
 
 .col-sm-4 p {
     margin: 0;
     font-size: 1.8em;
     font-weight: bold;
-    color: #a02834; 
+    color: #fff; 
 }
   
   /* Styling modal */
@@ -243,6 +243,22 @@ body {
       font-size: 0.8em;
     }
   }
+  /* Tambahkan media query untuk ukuran layar 426px */
+@media (max-width: 470px) {
+  .navbar-brand {
+    margin-right: 0; /* Menghapus margin kanan */
+  }
+
+  .navbar-nav {
+    margin-left: 0; /* Menghapus margin kiri */
+  }
+
+  .col-sm-4 {
+    flex: 0 0 100%; /* Kolom akan menjadi full width pada layar kecil */
+    margin-bottom: 10px; /* Tambahkan jarak antar kolom */
+  }
+}
+
   
 p#total-pengeluaran,
 p#total-pemasukan,
